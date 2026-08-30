@@ -1,0 +1,670 @@
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+body {
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef4ff,
+            #d6e5ff
+        );
+
+    color: #263653;
+
+}
+
+
+.page {
+
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: 35px auto;
+
+}
+
+
+/* HEADER */
+
+header {
+
+    text-align: center;
+
+    padding: 45px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #3157a4,
+            #537bd0
+        );
+
+    color: white;
+
+    border-radius:
+        25px
+        25px
+        0
+        0;
+
+}
+
+
+.travel-icon {
+
+    font-size: 52px;
+
+    margin-bottom: 8px;
+
+}
+
+
+header h1 {
+
+    font-size: 40px;
+
+    margin-bottom: 8px;
+
+}
+
+
+header p {
+
+    font-size: 17px;
+
+}
+
+
+/* MAIN */
+
+main {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius:
+        0
+        0
+        25px
+        25px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(45, 75, 130, 0.17);
+
+}
+
+
+/* MESSAGE */
+
+.message {
+
+    padding: 15px;
+
+    margin-bottom: 22px;
+
+    border-radius: 9px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+}
+
+
+.success {
+
+    background: #e8f8ee;
+
+    color: #287343;
+
+    border: 2px solid #acd8b9;
+
+}
+
+
+.error {
+
+    background: #fff0f0;
+
+    color: #a43838;
+
+    border: 2px solid #e3b5b5;
+
+}
+
+
+/* BOOKING CARD */
+
+.booking-card {
+
+    padding: 30px;
+
+    background: #f7f9ff;
+
+    border: 2px solid #d6e0f6;
+
+    border-radius: 17px;
+
+    margin-bottom: 32px;
+
+}
+
+
+.section-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.heading-icon {
+
+    width: 58px;
+
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #3157a4;
+
+    color: white;
+
+    border-radius: 13px;
+
+    font-size: 28px;
+
+}
+
+
+.section-heading h2 {
+
+    font-size: 27px;
+
+    color: #294a8b;
+
+    margin-bottom: 4px;
+
+}
+
+
+.section-heading p {
+
+    color: #697895;
+
+    font-size: 15px;
+
+}
+
+
+/* FORM */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+.form-group {
+
+    margin-bottom: 3px;
+
+}
+
+
+label {
+
+    display: block;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: #3b4e70;
+
+    margin-bottom: 8px;
+
+}
+
+
+input,
+select {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 2px solid #ccd7ee;
+
+    border-radius: 9px;
+
+    background: white;
+
+    color: #263653;
+
+    font-size: 16px;
+
+}
+
+
+input:focus,
+select:focus {
+
+    outline: none;
+
+    border-color: #456ac0;
+
+}
+
+
+button {
+
+    width: 100%;
+
+    margin-top: 22px;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #3157a4;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    background: #274785;
+
+}
+
+
+/* SCHEDULE */
+
+.schedule {
+
+    margin-bottom: 28px;
+
+}
+
+
+.schedule-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.schedule-header h2 {
+
+    color: #294a8b;
+
+    font-size: 28px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.schedule-header p {
+
+    color: #697895;
+
+    font-size: 15px;
+
+}
+
+
+.booking-count {
+
+    background: #3157a4;
+
+    color: white;
+
+    padding: 9px 15px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+}
+
+
+/* BOOKING LIST */
+
+.booking-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+.booking-item {
+
+    display: flex;
+
+    border: 2px solid #dbe3f4;
+
+    border-radius: 13px;
+
+    overflow: hidden;
+
+    background: #fbfcff;
+
+}
+
+
+.destination-box {
+
+    min-width: 170px;
+
+    padding: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    background: #eaf0ff;
+
+}
+
+
+.destination-box span {
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    color: #6479a5;
+
+    margin-bottom: 7px;
+
+}
+
+
+.destination-box strong {
+
+    color: #3157a4;
+
+    font-size: 20px;
+
+}
+
+
+.booking-info {
+
+    padding: 18px 22px;
+
+}
+
+
+.booking-info h3 {
+
+    color: #294a8b;
+
+    font-size: 20px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.booking-info p {
+
+    color: #687893;
+
+    font-size: 14px;
+
+    margin-top: 5px;
+
+}
+
+
+/* EMPTY */
+
+.empty {
+
+    text-align: center;
+
+    padding: 38px;
+
+    border: 2px dashed #ccd7ec;
+
+    border-radius: 13px;
+
+    background: #fafcff;
+
+}
+
+
+.empty-icon {
+
+    font-size: 44px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.empty h3 {
+
+    color: #3157a4;
+
+    font-size: 20px;
+
+    margin-bottom: 6px;
+
+}
+
+
+.empty p {
+
+    color: #71809a;
+
+}
+
+
+/* SESSION INFO */
+
+.session-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 19px;
+
+    background: #edf3ff;
+
+    border-left: 5px solid #3157a4;
+
+    border-radius: 8px;
+
+}
+
+
+.session-info span {
+
+    font-size: 34px;
+
+}
+
+
+.session-info p {
+
+    color: #62718b;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+}
+
+
+/* FOOTER */
+
+footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    color: #71809a;
+
+    font-size: 14px;
+
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    main {
+
+        padding: 22px 15px;
+
+    }
+
+
+    .form-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .schedule-header {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+
+    .booking-item {
+
+        flex-direction: column;
+
+    }
+
+
+    .destination-box {
+
+        min-width: auto;
+
+        padding: 16px;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .page {
+
+        margin: 10px;
+
+    }
+
+
+    header {
+
+        padding: 32px 15px;
+
+    }
+
+
+    header h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .booking-card {
+
+        padding: 20px 15px;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 22px;
+
+    }
+
+}

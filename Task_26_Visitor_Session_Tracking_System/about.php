@@ -1,0 +1,1 @@
+<?php session_start();$_SESSION["pages"][]="About";?><!doctype html><html><head><link rel="stylesheet" href="style.css"></head><body><div class="wrap"><div class="head"><h1>About Page</h1></div><div class="card"><p>Pages visited: <b><?=count($_SESSION["pages"])?></b></p><a href="index.php">Home</a></div></div></body></html>

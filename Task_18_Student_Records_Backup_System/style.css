@@ -1,0 +1,672 @@
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+body {
+
+    font-family:
+        "Arial",
+        sans-serif;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e8f5f2,
+            #c7e8df
+        );
+
+    color: #243b39;
+
+}
+
+
+.container {
+
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: 35px auto;
+
+}
+
+
+/* HEADER */
+
+header {
+
+    text-align: center;
+
+    padding: 45px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #087f70,
+            #13a892
+        );
+
+    color: white;
+
+    border-radius:
+        24px
+        24px
+        0
+        0;
+
+}
+
+
+.backup-icon {
+
+    font-size: 55px;
+
+    margin-bottom: 10px;
+
+}
+
+
+header h1 {
+
+    font-size: 40px;
+
+    margin-bottom: 8px;
+
+}
+
+
+header p {
+
+    font-size: 17px;
+
+}
+
+
+/* MAIN */
+
+main {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius:
+        0
+        0
+        24px
+        24px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(25, 90, 80, 0.16);
+
+}
+
+
+/* MESSAGE */
+
+.message {
+
+    padding: 15px;
+
+    border-radius: 9px;
+
+    margin-bottom: 22px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+}
+
+
+.success {
+
+    background: #e7f8f1;
+
+    color: #197052;
+
+    border: 2px solid #a9dccb;
+
+}
+
+
+.error {
+
+    background: #fff0f0;
+
+    color: #a33a3a;
+
+    border: 2px solid #e1b4b4;
+
+}
+
+
+/* BACKUP PANEL */
+
+.backup-panel {
+
+    padding: 30px;
+
+    background: #f1faf7;
+
+    border: 2px solid #c5e5dc;
+
+    border-radius: 17px;
+
+    margin-bottom: 32px;
+
+}
+
+
+.panel-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.title-icon {
+
+    width: 58px;
+
+    height: 58px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #087f70;
+
+    color: white;
+
+    border-radius: 13px;
+
+    font-size: 28px;
+
+}
+
+
+.panel-title h2 {
+
+    font-size: 28px;
+
+    color: #086c60;
+
+    margin-bottom: 5px;
+
+}
+
+
+.panel-title p {
+
+    color: #66817c;
+
+    font-size: 15px;
+
+}
+
+
+/* BUTTON */
+
+button {
+
+    width: 100%;
+
+    padding: 17px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #087f70;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    background: #06665a;
+
+}
+
+
+/* DATE TIME */
+
+.backup-info {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 15px;
+
+    margin-top: 20px;
+
+}
+
+
+.backup-info div {
+
+    padding: 17px;
+
+    background: white;
+
+    border: 2px solid #d4e9e3;
+
+    border-radius: 10px;
+
+}
+
+
+.backup-info strong {
+
+    display: block;
+
+    color: #47736c;
+
+    font-size: 13px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.backup-info span {
+
+    color: #086c60;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+}
+
+
+/* SECTIONS */
+
+.records,
+.backup-history {
+
+    margin-bottom: 30px;
+
+}
+
+
+.section-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.section-heading h2 {
+
+    color: #086c60;
+
+    font-size: 28px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.section-heading p {
+
+    color: #66817c;
+
+    font-size: 15px;
+
+}
+
+
+.record-count,
+.backup-count {
+
+    background: #087f70;
+
+    color: white;
+
+    padding: 9px 16px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+}
+
+
+/* TABLE */
+
+.table-wrapper {
+
+    overflow-x: auto;
+
+    border: 2px solid #d7eae5;
+
+    border-radius: 12px;
+
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 650px;
+
+}
+
+
+th {
+
+    background: #087f70;
+
+    color: white;
+
+    padding: 16px;
+
+    text-align: left;
+
+    font-size: 15px;
+
+}
+
+
+td {
+
+    padding: 16px;
+
+    border-bottom: 1px solid #e0eeeb;
+
+    font-size: 15px;
+
+}
+
+
+tr:last-child td {
+
+    border-bottom: none;
+
+}
+
+
+tr:nth-child(even) {
+
+    background: #f5fbf9;
+
+}
+
+
+.student-name {
+
+    font-weight: bold;
+
+    color: #086c60;
+
+}
+
+
+/* BACKUP LIST */
+
+.backup-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+
+.backup-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 17px;
+
+    border: 2px solid #d7eae5;
+
+    background: #fbfefd;
+
+    border-radius: 11px;
+
+}
+
+
+.file-icon {
+
+    font-size: 32px;
+
+}
+
+
+.backup-item strong {
+
+    color: #086c60;
+
+    font-size: 16px;
+
+}
+
+
+.backup-item p {
+
+    color: #758d89;
+
+    font-size: 13px;
+
+    margin-top: 5px;
+
+}
+
+
+/* EMPTY */
+
+.empty {
+
+    text-align: center;
+
+    padding: 35px;
+
+    border: 2px dashed #c9e1db;
+
+    border-radius: 12px;
+
+    background: #fbfefd;
+
+}
+
+
+.empty div {
+
+    font-size: 45px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.empty h3 {
+
+    color: #087f70;
+
+    font-size: 20px;
+
+    margin-bottom: 6px;
+
+}
+
+
+.empty p {
+
+    color: #758d89;
+
+}
+
+
+/* NOTE */
+
+.note {
+
+    padding: 20px;
+
+    background: #eaf7f3;
+
+    border-left: 5px solid #087f70;
+
+    border-radius: 8px;
+
+}
+
+
+.note strong {
+
+    display: block;
+
+    color: #086c60;
+
+    font-size: 16px;
+
+    margin-bottom: 6px;
+
+}
+
+
+.note p {
+
+    color: #647d78;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+}
+
+
+/* FOOTER */
+
+footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    color: #66817c;
+
+    font-size: 14px;
+
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    main {
+
+        padding: 22px 15px;
+
+    }
+
+
+    .section-heading {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+
+    .backup-info {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .container {
+
+        margin: 10px auto;
+
+    }
+
+
+    header {
+
+        padding: 32px 15px;
+
+    }
+
+
+    header h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .backup-panel {
+
+        padding: 20px 15px;
+
+    }
+
+
+    .panel-title h2 {
+
+        font-size: 23px;
+
+    }
+
+}

@@ -1,0 +1,3 @@
+MR001|John Smith|35|General Medicine|Fever and routine check-up
+MR002|Priya Kumar|28|Cardiology|Regular heart examination
+MR003|Rahul Das|42|Orthopedics|Back pain consultation

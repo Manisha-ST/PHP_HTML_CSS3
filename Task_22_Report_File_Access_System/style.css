@@ -1,0 +1,655 @@
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+body {
+
+    font-family:
+        "Trebuchet MS",
+        Arial,
+        sans-serif;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff5e6,
+            #f8d9b0
+        );
+
+    color: #49351f;
+
+}
+
+
+.container {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 35px auto;
+
+}
+
+
+/* HEADER */
+
+header {
+
+    text-align: center;
+
+    padding: 45px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #c46b27,
+            #e0924e
+        );
+
+    color: white;
+
+    border-radius:
+        25px
+        25px
+        0
+        0;
+
+}
+
+
+.main-icon {
+
+    font-size: 55px;
+
+    margin-bottom: 10px;
+
+}
+
+
+header h1 {
+
+    font-size: 40px;
+
+    margin-bottom: 8px;
+
+}
+
+
+header p {
+
+    font-size: 17px;
+
+}
+
+
+/* MAIN */
+
+main {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius:
+        0
+        0
+        25px
+        25px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(120, 75, 30, 0.16);
+
+}
+
+
+/* MESSAGE */
+
+.message {
+
+    padding: 15px;
+
+    margin-bottom: 22px;
+
+    border-radius: 9px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+}
+
+
+.success {
+
+    background: #eaf8ef;
+
+    color: #267246;
+
+    border: 2px solid #afd9bc;
+
+}
+
+
+.error {
+
+    background: #fff0f0;
+
+    color: #a23e3e;
+
+    border: 2px solid #e2b6b6;
+
+}
+
+
+/* INTRO */
+
+.intro {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 25px;
+
+    background: #fff8ed;
+
+    border: 2px solid #f0d6b4;
+
+    border-radius: 15px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.intro-icon {
+
+    width: 60px;
+
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #c46b27;
+
+    color: white;
+
+    border-radius: 13px;
+
+    font-size: 29px;
+
+}
+
+
+.intro h2 {
+
+    color: #a5541c;
+
+    font-size: 27px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.intro p {
+
+    color: #7d6b58;
+
+    font-size: 15px;
+
+}
+
+
+/* CATEGORY GRID */
+
+.category-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.category-card {
+
+    padding: 25px 20px;
+
+    background: #fffdf9;
+
+    border: 2px solid #edd8bd;
+
+    border-radius: 15px;
+
+}
+
+
+.category-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(125, 80, 30, 0.12);
+
+}
+
+
+.category-icon {
+
+    font-size: 45px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.category-card h2 {
+
+    color: #a5541c;
+
+    font-size: 23px;
+
+    margin-bottom: 6px;
+
+}
+
+
+.folder-name {
+
+    color: #89745e;
+
+    font-size: 14px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.file-count {
+
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    background: #f6e3cb;
+
+    color: #9a501d;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* FILE LIST */
+
+.file-list {
+
+    border-top: 1px solid #ead8c2;
+
+    padding-top: 15px;
+
+}
+
+
+.file-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #eee1d1;
+
+}
+
+
+.file-row:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.file-details {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    min-width: 0;
+
+}
+
+
+.file-icon {
+
+    font-size: 22px;
+
+}
+
+
+.file-details span:last-child {
+
+    font-size: 14px;
+
+    color: #584532;
+
+    word-break: break-word;
+
+}
+
+
+.file-row a {
+
+    flex-shrink: 0;
+
+    padding: 8px 13px;
+
+    background: #c46b27;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+.file-row a:hover {
+
+    background: #a5541c;
+
+}
+
+
+.no-file {
+
+    color: #927e68;
+
+    font-size: 14px;
+
+    padding: 10px 0;
+
+}
+
+
+/* INFORMATION */
+
+.information {
+
+    margin-top: 30px;
+
+    padding: 22px;
+
+    background: #fff5e7;
+
+    border-left: 5px solid #c46b27;
+
+    border-radius: 8px;
+
+}
+
+
+.information h2 {
+
+    color: #a5541c;
+
+    font-size: 21px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.information p {
+
+    color: #75614d;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+}
+
+
+/* REPORT VIEW */
+
+.report-view {
+
+    max-width: 850px;
+
+    margin: auto;
+
+}
+
+
+.report-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 25px;
+
+    background: #fff8ed;
+
+    border: 2px solid #edd4b5;
+
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.report-icon {
+
+    font-size: 50px;
+
+}
+
+
+.report-header h2 {
+
+    color: #a5541c;
+
+    font-size: 27px;
+
+    word-break: break-word;
+
+}
+
+
+.report-header p {
+
+    color: #806d58;
+
+    margin-top: 5px;
+
+}
+
+
+.report-content {
+
+    min-height: 250px;
+
+    padding: 28px;
+
+    background: #fffdf9;
+
+    border: 2px solid #ead8c2;
+
+    border-radius: 13px;
+
+    color: #49351f;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    white-space: normal;
+
+    margin-bottom: 25px;
+
+}
+
+
+.back-button {
+
+    display: inline-block;
+
+    padding: 13px 20px;
+
+    background: #c46b27;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+}
+
+
+.back-button:hover {
+
+    background: #a5541c;
+
+}
+
+
+/* FOOTER */
+
+footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    color: #806d58;
+
+    font-size: 14px;
+
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    main {
+
+        padding: 22px 15px;
+
+    }
+
+
+    .category-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .container {
+
+        margin: 10px;
+
+    }
+
+
+    header {
+
+        padding: 32px 15px;
+
+    }
+
+
+    header h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .intro {
+
+        align-items: flex-start;
+
+    }
+
+
+    .category-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .file-row {
+
+        align-items: flex-start;
+
+    }
+
+
+    .report-header {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+}

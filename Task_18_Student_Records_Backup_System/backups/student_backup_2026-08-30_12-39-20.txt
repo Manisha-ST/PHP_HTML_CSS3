@@ -1,0 +1,7 @@
+STUDENT RECORD BACKUP
+Backup Date: 30-08-2026
+Backup Time: 12:39:20 PM
+--------------------------------
+24SBCS001|Ananya|B.Sc Computer Science|85
+24SBCS002|Divya|B.Sc Computer Science|91
+24SBCS003|Keerthana|B.Sc Computer Science|88

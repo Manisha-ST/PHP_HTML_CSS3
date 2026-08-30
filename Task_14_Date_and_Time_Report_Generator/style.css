@@ -1,0 +1,349 @@
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+body {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f3edff,
+            #e2d5ff
+        );
+
+    color: #30224a;
+
+}
+
+
+.page {
+
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: 35px auto;
+
+    background: white;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px
+        rgba(70, 45, 110, 0.18);
+
+}
+
+
+/* HEADER */
+
+.header {
+
+    text-align: center;
+
+    padding: 42px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6c3fc5,
+            #9270df
+        );
+
+    color: white;
+
+}
+
+
+.clock {
+
+    font-size: 52px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.header h1 {
+
+    font-size: 40px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.header p {
+
+    font-family: Arial, sans-serif;
+
+    font-size: 17px;
+
+}
+
+
+/* CONTENT */
+
+.content {
+
+    padding: 35px;
+
+}
+
+
+/* MAIN DATE */
+
+.main-date {
+
+    text-align: center;
+
+    padding: 30px;
+
+    background: #f7f3ff;
+
+    border: 2px solid #ded2f6;
+
+    border-radius: 17px;
+
+    margin-bottom: 28px;
+
+}
+
+
+.main-date span {
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #7955b9;
+
+}
+
+
+.main-date h2 {
+
+    font-size: 30px;
+
+    color: #432575;
+
+    margin: 10px 0;
+
+}
+
+
+.time {
+
+    font-family: Arial, sans-serif;
+
+    font-size: 36px;
+
+    font-weight: bold;
+
+    color: #6c3fc5;
+
+}
+
+
+/* REPORT GRID */
+
+.report-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+}
+
+
+.report-card {
+
+    text-align: center;
+
+    padding: 25px 15px;
+
+    background: #fcfaff;
+
+    border: 2px solid #e5dcf5;
+
+    border-radius: 14px;
+
+}
+
+
+.report-card:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(80, 50, 120, 0.12);
+
+}
+
+
+.icon {
+
+    font-size: 34px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.report-card h3 {
+
+    font-family: Arial, sans-serif;
+
+    font-size: 18px;
+
+    color: #543487;
+
+    margin-bottom: 9px;
+
+}
+
+
+.report-card p {
+
+    font-family: Arial, sans-serif;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #33204e;
+
+}
+
+
+/* INFORMATION */
+
+.info {
+
+    margin-top: 28px;
+
+    padding: 18px 20px;
+
+    background: #f0eaff;
+
+    border-left: 5px solid #6c3fc5;
+
+    border-radius: 8px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    color: #503b70;
+
+}
+
+
+.info strong {
+
+    color: #432575;
+
+}
+
+
+/* FOOTER */
+
+.footer {
+
+    text-align: center;
+
+    padding: 18px;
+
+    background: #f7f3ff;
+
+    color: #76658e;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 750px) {
+
+    .report-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .page {
+
+        margin: 10px;
+
+    }
+
+
+    .content {
+
+        padding: 20px 15px;
+
+    }
+
+
+    .header h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .main-date h2 {
+
+        font-size: 23px;
+
+    }
+
+
+    .time {
+
+        font-size: 29px;
+
+    }
+
+
+    .report-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}

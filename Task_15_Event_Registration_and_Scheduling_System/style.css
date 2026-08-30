@@ -1,0 +1,670 @@
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+body {
+
+    font-family:
+        "Trebuchet MS",
+        Arial,
+        sans-serif;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f5,
+            #f8d7e5
+        );
+
+    color: #43283a;
+
+}
+
+
+.container {
+
+    max-width: 1050px;
+
+    width: 100%;
+
+    margin: 35px auto;
+
+}
+
+
+/* HEADER */
+
+header {
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #a83267,
+            #d45c8a
+        );
+
+    color: white;
+
+    border-radius:
+        25px
+        25px
+        0
+        0;
+
+}
+
+
+.calendar-icon {
+
+    font-size: 50px;
+
+    margin-bottom: 10px;
+
+}
+
+
+header h1 {
+
+    font-size: 39px;
+
+    margin-bottom: 8px;
+
+}
+
+
+header p {
+
+    font-size: 17px;
+
+}
+
+
+/* MAIN */
+
+main {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius:
+        0
+        0
+        25px
+        25px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(120, 45, 80, 0.16);
+
+}
+
+
+/* MESSAGE */
+
+.message {
+
+    padding: 15px;
+
+    border-radius: 9px;
+
+    margin-bottom: 22px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+}
+
+
+.success {
+
+    background: #e9f8ef;
+
+    border: 2px solid #acd8b9;
+
+    color: #26713c;
+
+}
+
+
+.error {
+
+    background: #fff0f1;
+
+    border: 2px solid #e5b4bd;
+
+    color: #a12e45;
+
+}
+
+
+/* REGISTRATION CARD */
+
+.registration-card {
+
+    background: #fff8fb;
+
+    border: 2px solid #f0ccdc;
+
+    padding: 30px;
+
+    border-radius: 17px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.title {
+
+    display: flex;
+
+    gap: 15px;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+}
+
+
+.title > span {
+
+    width: 55px;
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #a83267;
+
+    color: white;
+
+    border-radius: 12px;
+
+    font-size: 26px;
+
+}
+
+
+.title h2 {
+
+    color: #8c2856;
+
+    font-size: 27px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.title p {
+
+    color: #806270;
+
+    font-size: 15px;
+
+}
+
+
+/* FORM */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+.form-group {
+
+    margin-bottom: 4px;
+
+}
+
+
+label {
+
+    display: block;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: #563348;
+
+    margin-bottom: 8px;
+
+}
+
+
+input,
+select {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 2px solid #e5c4d3;
+
+    border-radius: 9px;
+
+    font-size: 16px;
+
+    color: #43283a;
+
+    background: white;
+
+}
+
+
+input:focus,
+select:focus {
+
+    outline: none;
+
+    border-color: #b13c70;
+
+}
+
+
+button {
+
+    width: 100%;
+
+    margin-top: 22px;
+
+    padding: 16px;
+
+    background: #a83267;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 9px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    background: #87254f;
+
+}
+
+
+/* SCHEDULE */
+
+.schedule {
+
+    margin-bottom: 25px;
+
+}
+
+
+.schedule-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    gap: 15px;
+
+}
+
+
+.schedule-title h2 {
+
+    color: #8c2856;
+
+    font-size: 28px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.schedule-title p {
+
+    color: #806270;
+
+    font-size: 15px;
+
+}
+
+
+.count {
+
+    background: #a83267;
+
+    color: white;
+
+    padding: 9px 15px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+}
+
+
+/* EVENTS */
+
+.event-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+.event-card {
+
+    display: flex;
+
+    align-items: stretch;
+
+    border: 2px solid #efd5e0;
+
+    border-radius: 13px;
+
+    overflow: hidden;
+
+    background: #fffafd;
+
+}
+
+
+.event-date {
+
+    min-width: 145px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #f8e5ed;
+
+    padding: 20px;
+
+    text-align: center;
+
+}
+
+
+.event-date span {
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    color: #a15a78;
+
+    margin-bottom: 7px;
+
+}
+
+
+.event-date strong {
+
+    font-size: 18px;
+
+    color: #8c2856;
+
+}
+
+
+.event-details {
+
+    padding: 18px 22px;
+
+}
+
+
+.event-details h3 {
+
+    color: #8c2856;
+
+    font-size: 20px;
+
+    margin-bottom: 9px;
+
+}
+
+
+.event-details p {
+
+    color: #72596a;
+
+    font-size: 14px;
+
+    margin-top: 5px;
+
+}
+
+
+/* EMPTY */
+
+.empty {
+
+    text-align: center;
+
+    padding: 35px;
+
+    border: 2px dashed #e2c6d3;
+
+    border-radius: 12px;
+
+    background: #fffafd;
+
+}
+
+
+.empty div {
+
+    font-size: 42px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.empty h3 {
+
+    color: #8c2856;
+
+    font-size: 20px;
+
+    margin-bottom: 6px;
+
+}
+
+
+.empty p {
+
+    color: #806270;
+
+}
+
+
+/* SESSION NOTE */
+
+.session-note {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 20px;
+
+    background: #fff1f6;
+
+    border-left: 5px solid #a83267;
+
+    border-radius: 8px;
+
+}
+
+
+.session-note span {
+
+    font-size: 35px;
+
+}
+
+
+.session-note p {
+
+    color: #72596a;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+}
+
+
+/* FOOTER */
+
+footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    color: #806270;
+
+    font-size: 14px;
+
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    main {
+
+        padding: 22px 15px;
+
+    }
+
+
+    .form-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .schedule-title {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+
+    .event-card {
+
+        flex-direction: column;
+
+    }
+
+
+    .event-date {
+
+        min-width: auto;
+
+        padding: 15px;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .container {
+
+        margin: 10px auto;
+
+    }
+
+
+    header {
+
+        padding: 30px 15px;
+
+    }
+
+
+    header h1 {
+
+        font-size: 29px;
+
+    }
+
+
+    .registration-card {
+
+        padding: 20px 15px;
+
+    }
+
+
+    .title h2 {
+
+        font-size: 22px;
+
+    }
+
+}

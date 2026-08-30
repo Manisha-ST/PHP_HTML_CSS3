@@ -1,0 +1,3 @@
+24SBCS001|Ananya|B.Sc Computer Science|85
+24SBCS002|Divya|B.Sc Computer Science|91
+24SBCS003|Keerthana|B.Sc Computer Science|88

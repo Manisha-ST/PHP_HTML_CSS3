@@ -1,0 +1,1 @@
+<?php session_start();if(!isset($_SESSION["user"]))header("Location:index.php");?><!doctype html><html><head><link rel="stylesheet" href="style.css"></head><body><div class="wrap"><div class="head"><h1>Dashboard</h1></div><div class="card"><h2>Welcome, <?=htmlspecialchars($_SESSION["user"])?>!</h2><p>Authenticated successfully.</p></div></div></body></html>
