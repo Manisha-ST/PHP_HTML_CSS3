@@ -1,0 +1,2 @@
+Student: Manisha | Register No: 24SBCS055 | Activity: Workshop | Status: Completed | Description: Workshop on Machine Learning and Artificial Intelligence on Healthcare. | Date: 30-08-2026 11:15:01 AM
+Student: Harsha | Register No: 24SBCS012 | Activity: Sports | Status: Pending | Description: Badminton District Championship in Chennai | Date: 30-08-2026 11:18:37 AM

@@ -1,0 +1,9 @@
+Shipment ID: SH1289
+Customer: Manisha
+Origin: Coimbatore
+Destination: Kerala
+Package Type: Clothing
+Status: In Transit
+Shipment Date: 2026-09-12
+Weight: 3.9 kg
+Created On: 30-08-2026 11:44:32 AM

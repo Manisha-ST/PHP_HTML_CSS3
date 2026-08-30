@@ -1,0 +1,11 @@
+Web Design and Development
+
+Web development is the process of creating websites and web applications.
+
+HTML is used to create the structure of a web page.
+
+CSS is used to design and style web pages.
+
+PHP is a server-side scripting language used to create dynamic web applications.
+
+Modern web applications combine HTML, CSS and PHP to provide interactive and user-friendly websites.

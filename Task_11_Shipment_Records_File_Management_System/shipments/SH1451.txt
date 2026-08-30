@@ -1,0 +1,9 @@
+Shipment ID: SH1451
+Customer: Manisha
+Origin: Coimbatore
+Destination: Delhi
+Package Type: Electronics
+Status: Delivered
+Shipment Date: 2026-08-30
+Weight: 8.0 kg
+Created On: 30-08-2026 11:45:34 AM

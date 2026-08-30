@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #eef7f6;
+    color: #203332;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+}
+
+header {
+    background: #176b87;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 19px;
+}
+
+.card,
+.result-card {
+    background: white;
+    padding: 45px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card {
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 29px;
+    color: #176b87;
+    margin-bottom: 18px;
+}
+
+.description {
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+button {
+    border: none;
+    background: #176b87;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0f5067;
+}
+
+.result-card {
+    text-align: left;
+}
+
+.file-info {
+    background: #e1f2f1;
+    border-left: 6px solid #176b87;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.file-info h2 {
+    color: #176b87;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.file-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.article-box {
+    background: #fafdfd;
+    border: 2px solid #b8dedd;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.article-box h2 {
+    color: #176b87;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #b8dedd;
+    padding-bottom: 12px;
+}
+
+.content p {
+    font-size: 19px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.back-button {
+    display: inline-block;
+    background: #176b87;
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 9px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background: #0f5067;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 29px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .card,
+    .result-card {
+        padding: 25px 18px;
+    }
+
+    .article-box {
+        padding: 20px;
+    }
+
+    .content p {
+        font-size: 17px;
+    }
+}

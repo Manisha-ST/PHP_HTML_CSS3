@@ -1,0 +1,412 @@
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+body {
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e8f5f2,
+            #cde8e1
+        );
+
+    color: #24433e;
+
+}
+
+
+.container {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px 15px;
+
+}
+
+
+.hotel-card {
+
+    width: 100%;
+
+    max-width: 720px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px
+        rgba(35, 80, 70, 0.18);
+
+}
+
+
+/* HEADER */
+
+.header {
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #176b5b,
+            #2a9d8f
+        );
+
+    color: white;
+
+    padding: 42px 25px;
+
+}
+
+
+.hotel-icon {
+
+    font-size: 52px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.header h1 {
+
+    font-size: 38px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.header p {
+
+    font-size: 17px;
+
+}
+
+
+/* CONTENT */
+
+.content {
+
+    padding: 35px;
+
+}
+
+
+.form-group {
+
+    margin-bottom: 23px;
+
+}
+
+
+label {
+
+    display: block;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #28534b;
+
+    margin-bottom: 9px;
+
+}
+
+
+input[type="date"] {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: 2px solid #b9d9d2;
+
+    border-radius: 10px;
+
+    font-size: 17px;
+
+    color: #294b45;
+
+    background: #f8fcfb;
+
+}
+
+
+input[type="date"]:focus {
+
+    outline: none;
+
+    border-color: #2a9d8f;
+
+}
+
+
+button {
+
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #176b5b;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    background: #125245;
+
+}
+
+
+/* RESULT */
+
+.result {
+
+    margin-top: 30px;
+
+    padding: 25px;
+
+    background: #effaf7;
+
+    border: 2px solid #b8ded6;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+}
+
+
+.result-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    margin: 0 auto 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #2a9d8f;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 28px;
+
+}
+
+
+.result h2 {
+
+    color: #176b5b;
+
+    font-size: 27px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.result p {
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    color: #315c54;
+
+    margin-bottom: 22px;
+
+}
+
+
+/* DATES */
+
+.dates {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+
+}
+
+
+.dates div:not(.arrow) {
+
+    background: white;
+
+    border: 1px solid #c6dfda;
+
+    padding: 14px 18px;
+
+    border-radius: 9px;
+
+}
+
+
+.dates span {
+
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    color: #6b8a84;
+
+    margin-bottom: 5px;
+
+}
+
+
+.dates strong {
+
+    font-size: 16px;
+
+    color: #24584e;
+
+}
+
+
+.arrow {
+
+    font-size: 25px;
+
+    color: #2a9d8f;
+
+    font-weight: bold;
+
+}
+
+
+/* ERROR */
+
+.error {
+
+    margin-top: 25px;
+
+    padding: 16px;
+
+    background: #fff0ee;
+
+    border: 2px solid #e5b7b0;
+
+    color: #a33d32;
+
+    border-radius: 9px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+}
+
+
+/* FOOTER */
+
+.footer {
+
+    text-align: center;
+
+    background: #f0f8f6;
+
+    color: #66817b;
+
+    padding: 18px;
+
+    font-size: 14px;
+
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .content {
+
+        padding: 25px 18px;
+
+    }
+
+
+    .header {
+
+        padding: 32px 18px;
+
+    }
+
+
+    .header h1 {
+
+        font-size: 29px;
+
+    }
+
+
+    .dates {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+
+    .arrow {
+
+        transform: rotate(90deg);
+
+    }
+
+}

@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff4e6;
+    color: #3d2b1f;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    background: #8b4513;
+    color: white;
+    padding: 30px;
+    border-radius: 18px 18px 0 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 19px;
+}
+
+.card,
+.result-card {
+    background: white;
+    padding: 40px;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+    text-align: center;
+    color: #8b4513;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 14px;
+    font-size: 17px;
+    border: 2px solid #d6b08c;
+    border-radius: 8px;
+    background: #fffaf5;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #8b4513;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #8b4513;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6f350f;
+}
+
+.result-card {
+    text-align: center;
+}
+
+.welcome {
+    background: #fff4e6;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.welcome h2 {
+    color: #8b4513;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    font-size: 18px;
+}
+
+.details {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.detail-box {
+    flex: 1;
+    min-width: 200px;
+    background: #f7dfc8;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.detail-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #6f350f;
+}
+
+.detail-box p {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #8b4513;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background: #6f350f;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .card,
+    .result-card {
+        padding: 25px 20px;
+    }
+
+    .card h2 {
+        font-size: 23px;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+
+    .detail-box {
+        width: 100%;
+    }
+}
